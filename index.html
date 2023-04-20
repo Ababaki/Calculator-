@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JavaScript Calculator</title>
+	<link rel="stylesheet" href="calculator.css">
+	<script src="calculator.js"></script>
+</head>
+<body>
+	<div class="calculator">
+		<div class="screen">
+			<input type="text" id="result" disabled>
+		</div>
+		<div class="row">
+			<button onclick="clearResult()" class="button clear">C</button>
+			<button onclick="getResult('/')" class="button operator">&divide;</button>
+			<button onclick="getResult('*')" class="button operator">&times;</button>
+			<button onclick="getResult('-')" class="button operator">&minus;</button>
+		</div>
+		<div class="row">
+			<button onclick="getResult('7')" class="button number">7</button>
+			<button onclick="getResult('8')" class="button number">8</button>
+			<button onclick="getResult('9')" class="button number">9</button>
+			<button onclick="getResult('+')" class="button operator">+</button>
+		</div>
+		<div class="row">
+			<button onclick="getResult('4')" class="button number">4</button>
+			<button onclick="getResult('5')" class="button number">5</button>
+			<button onclick="getResult('6')" class="button number">6</button>
+			<button onclick="getResult('')" class="button"></button>
+		</div>
+		<div class="row">
+			<button onclick="getResult('1')" class="button number">1</button>
+			<button onclick="getResult('2')" class="button number">2</button>
+			<button onclick="getResult('3')" class="button number">3</button>
+			<button onclick="getResult('0')" class="button number">0</button>
+		</div>
+		<div class="row">
+			<button onclick="calculateResult()" class="button equals">=</button>
+		</div>
+	</div>
+</body>
+</html>
